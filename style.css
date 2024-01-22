@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("calc.jpg");   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(62, 57, 57);
+}
+
+.container{
+    height: 90vh;
+  width: 35vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(2, 10, 41);
+    flex-direction: column; 
+    border-radius: 10px;
+    border: 2px solid rgba(115, 115, 240, 0.484);
+}
+
+.input{
+    height: 6vh;
+  width: 14vw;
+  font-size: large;
+  margin: 0 2vw;
+  padding: 0 2vw;
+  border-radius: 10px;
+  background-color: #f7dfdf;
+}
+.display{
+     margin: 20px;
+}
+.button{
+    height: 40px;
+  width: 40px;
+  padding: 7px;
+  margin: 5px;
+  font-size: large;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  background-color:#a81a1a ;
+  border-radius: 100px;
+}
+
+.button:hover {
+  background-color: #7b5fdd;
+  color: #fff;
+  border-color: #7b5fdd;
+}
+
+/* Active State */
+.button:active {
+  background-color: #5a15ef;
+  border-color: #5a15ef;
+  color: #fff;
+}
+.zero{
+  width: 7vw;
+}
+.cal{
+  margin:0 0 10vh 0;
+
+  color:#f7dfdf ;
+  font-size: 2rem;
+}
+.call::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width:0%;
+  background-color: #f7dfdf;
+  transition: all ease 1s;
+}
+.cal:hover::after{
+  font-size: 2.5rem;
+  color: #fdb3b3;
+  width: 100%;
+}
